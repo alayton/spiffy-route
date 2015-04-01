@@ -64,7 +64,7 @@ class Route
 
         if (preg_match('@^' . $this->regex . '$@', $path, $matches)) {
             foreach ($matches as $index => $match) {
-                if (is_numeric($index) || empty($matches[$index]))) {
+                if (is_numeric($index) || empty($matches[$index])) {
                     unset($matches[$index]);
                 }
             }
